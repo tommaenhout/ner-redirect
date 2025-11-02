@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 
+const INSTAGRAM_URL = "https://www.instagram.com/ner.______/"
+
 const Redirect = () => {
     const [countdown, setCountdown] = useState<number>(5)
 
@@ -12,7 +14,7 @@ const Redirect = () => {
 
         if (countdown === 0) {
             clearInterval(timer)
-            window.location.href = "https://www.instagram.com/ner.______/"
+            window.location.href = INSTAGRAM_URL
         }
 
         return () => clearInterval(timer)
