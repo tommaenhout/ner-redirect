@@ -1,12 +1,5 @@
-import Redirect from "@/components/Redirect";
+import ThankYou from "@/components/ThankYou";
 
-export default function Home() {
-  return (
-      <main className="">
-        <h1>Ner</h1>
-        <h2>Gracias por tu compra!!</h2>
-        <p>Te redireccionaremos a nuestra página de instagram</p>
-        <Redirect/>
-      </main>
-  );
+export default function Page() {
+  return <ThankYou />;
 }
